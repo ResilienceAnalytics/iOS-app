@@ -42,7 +42,7 @@ class ViewController: UIViewController {
             "participants": participants
         ]
         
-        guard let url = URL(string: "http://your_server_address/submit_transaction") else { return }
+        guard let url = URL(string: "http://170.172.140.130:5000/submit_transaction") else { return }
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
@@ -94,7 +94,7 @@ class ViewController: UIViewController {
             "participants": participants
         ]
         
-        guard let url = URL(string: "http://your_server_address/receive_transaction") else { return }
+        guard let url = URL(string: "http://107.172.140.130:5000/receive_transaction") else { return }
         
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
